@@ -117,10 +117,11 @@ const checkForObserver = () => {
       })
     }
   }
+
+confetti.start();
   
   const title = document.querySelectorAll('.section__title');
   const content = document.querySelectorAll('.section__content');
-
   const boundary = bound({
     margins: {
       top: 100
@@ -129,6 +130,7 @@ const checkForObserver = () => {
 
   const whenElementEnters = (el, newClass) => {
     return () => {
+      confetti.stop()
       el.classList.add(newClass);
       boundary.unWatch(el);
     };
