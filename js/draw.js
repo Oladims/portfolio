@@ -38,7 +38,7 @@ function mouseClicked () {
     triangle(mouseX, mouseY, mouseX + sideLength, mouseY,
       mouseX + (0.5 * sideLength), mouseY - sideLength)
   }
-  console.log("Drawing");
+  // console.log("Drawing");
 }
 
 window.onresize = () => {
