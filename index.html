@@ -66,13 +66,19 @@
     <meta
       name="twitter:image:src"
       content="https://oladims.github.io/portfolio/img/og.png"
-    />
-    <link
+      />
+      <link rel="stylesheet" href="https://oladims.github.io/portfolio/css/main.css" hreflang="en-us" />
+      <link
       href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://oladims.github.io/portfolio/css/main.css" hreflang="en-us" />
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"
+    defer
+  ></script>
+  
+   
   </head>
   <body>
     <div id="site">
@@ -85,7 +91,26 @@
         <div class="moon"></div>
       </div>
       <header class="intro">
-        <h1 class="intro__hello">
+
+        <div id="intro__name" class="d-none intro__tagline">
+            <div class="alias animated fadeInDown">
+                <span style="color:#e8c0ff;" class="transparent animateupdown">D</span>
+                <span style="color:#3db161;" class="transparent animateupdown">E</span>
+                <span style="color:#f0532c;" class="transparent animateupdown">V</span>
+            </div>
+            <div class="alias animated fadeInUp">
+                <span style="color:#fd3;" class=" transparent animateupdown">I</span>
+                <span style="color:#FF00FF;" class=" transparent animateupdown">B</span>
+                <span style="color:#000080;" class=" transparent animateupdown">R</span>
+                <span style="color:#008080;" class=" transparent animateupdown">A</span>
+                <span style="color:#00FFFF;" class=" transparent animateupdown">H</span>
+                <span style="color:#808000;" class=" transparent animateupdown">I</span>
+                <span style="color:#bd9986;" class=" transparent animateupdown">M</span>
+            </div>
+        </div>
+      
+        <div class="" id="intro__info">
+            <h1 class="intro__hello">
           Hello! <span class="emoji wave-hand animated"></span>
         </h1>
         <h2 class="intro__tagline">
@@ -104,6 +129,8 @@
             >
           </span>
         </h3>
+        </div>
+
       </header>
       <section class="section background">
         <div class="animated  section__title">Background</div>
@@ -344,14 +371,20 @@
         <div class="footer__copyright">
           <div class="top"><span>Developed by Ibrahim</span></div>
           <div class="bottom">
-            <span>
+            <span>Inspired by 
             <a
               href="https://brittanychiang.com/"
               target="_blank"
               class=" underline-link"
-              >Inspired by Brittany</a
+              >Brittany</a
+            > &amp 
+            <a
+              href="https://github.com/aspittel/aspittel.github.io/"
+              target="_blank"
+              class=" underline-link"
+              >Ali</a
             ></span>
-            <img class="emoji" src="/img/emojis/rockon.png" alt="emoji">
+            <img class="emoji" src="https://oladims.github.io/portfolio/img/emojis/rockon.png" alt="emoji">
             <!-- <span>2018</span> -->
           </div>
         </div>
@@ -381,7 +414,7 @@
           <img src="https://oladims.github.io/portfolio/img/social/instagram.svg" alt="instagram" />
         </a>
         <a
-        href="http://codepen.io/holla_dimeji"
+        href="https://codepen.io/holla_dimeji"
         target="_blank"
             title="codepen"
             >
@@ -411,9 +444,10 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
-    <!-- <script src="https://oladims.github.io/portfolio/js/bound.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="https://oladims.github.io/portfolio/js/main.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://oladims.github.io/portfolio/js/bound.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="https://oladims.github.io/portfolio/js/draw.js"></script>
   </body>
   </html>
   

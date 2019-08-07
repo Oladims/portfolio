@@ -119,6 +119,15 @@ html {
     BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   width: 100%;
+  z-index: 2;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: 1 !important;
+  width: 100%;
+  height: 100vh;
+  margin-left: 0em;
 }
 body.night,
 html.night {
@@ -165,6 +174,7 @@ body.night .section__content .underline-link:after,
 html.night .section__content .underline-link:after {
   background: #e7e7e7;
 }
+
 a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -403,6 +413,8 @@ strong {
   position: absolute;
   top: 20px;
   right: 30px;
+  z-index: 3;
+  /* Highest z-index presently */
 }
 @media screen and (max-width: 480px) {
   .switch-wrapper {
@@ -1139,3 +1151,62 @@ strong {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
+
+
+/* Custom css */
+
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  margin-left: 0em;
+}
+.alias {
+  width: 100%;
+    font-size: 70px;
+    letter-spacing: -13px;
+    font-weight: 800;
+    line-height: -10px;
+}
+@media screen and (min-width: 375px) {
+  .alias {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 429px) {
+  .alias {
+    font-size: 90px;
+  }
+}
+@media screen and (min-width: 550px) {
+  .alias {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .alias {
+    font-size: 110px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .alias {
+    font-size: 130px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .alias {
+    font-size: 150px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .alias {
+    font-size: 250px;
+  }
+}
+    .d-none{
+      display: none;
+    }
+
