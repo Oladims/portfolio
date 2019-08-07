@@ -61,4 +61,15 @@ $(function() {
   hand.addEventListener('mouseout', function() {
     hand.classList.remove('wave');
   });
+  
+  function changeColor(){
+    var textcolors = ['#5cd1f3', '#835cf3', '#8d38e4', '#f35c5c', '#b1f35c'];
+  var textcolor = textcolors[Math.floor(Math.random() * textcolors.length)];
+  $('#tip').css({ color: `${textcolor}` });
+  }
+
+  function animatecolor() {
+    setInterval(changeColor, 3000);
+  }
+  $(document).ready(animatecolor);
 });
