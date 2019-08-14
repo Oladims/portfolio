@@ -381,6 +381,7 @@ strong {
   #top-button {
     bottom: 15px;
     right: 3px;
+    width: 70px;
   }
 }
 
