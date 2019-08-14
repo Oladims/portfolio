@@ -361,12 +361,15 @@ strong {
   border: none;
   outline: 0;
   width: 70px;
+  height: 100px;
   position: fixed;
   bottom: 25px;
   right: 10px;
   cursor: pointer;
   display: none;
 }
+  
+
 @media screen and (max-width: 1024px) {
   #top-button {
     bottom: 20px;
@@ -380,6 +383,7 @@ strong {
     right: 3px;
   }
 }
+
 #top-button:focus,
 #top-button:hover {
   -webkit-transform: translateY(-10px);
@@ -387,6 +391,7 @@ strong {
 }
 #top-button img {
   width: 100%;
+  height: 70px;
 }
 .waypoint {
   opacity: 0;
