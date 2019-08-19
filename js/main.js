@@ -5,6 +5,10 @@ $(function() {
   const body = document.querySelector('body');
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');
+  const title = document.querySelectorAll(".section__title");
+  const content = document.querySelectorAll(".section__content");
+  const hand = document.querySelector('.emoji.wave-hand');
+  let options = {};
 
 
   if (night) {
@@ -14,11 +18,7 @@ $(function() {
 
   toggle.addEventListener('click', function() {
     const isChecked = input.checked;
-    if (isChecked) {
-      body.classList.remove('night');
-    } else {
-      body.classList.add('night');
-    }
+    isChecked ? body.classList.remove('night') : body.classList.add('night');
   });
 
   const introHeight = document.querySelector('.intro').offsetHeight;
@@ -27,7 +27,7 @@ $(function() {
 
   window.addEventListener(
     'scroll',
-    function() {
+    () => {
       if (window.scrollY > introHeight) {
         $topButton.fadeIn();
       } else {
@@ -41,11 +41,10 @@ $(function() {
     $('html, body').animate({ scrollTop: 0 }, 500);
   });
 
-  const hand = document.querySelector('.emoji.wave-hand');
 
-  function waveOnLoad() {
+  const waveOnLoad = () => {
     hand.classList.add('wave');
-    setTimeout(function() {
+    setTimeout(() => {
       hand.classList.remove('wave');
     }, 2000);
   }
@@ -62,14 +61,56 @@ $(function() {
     hand.classList.remove('wave');
   });
   
-  function changeColor(){
-    var textcolors = ['#5cd1f3', '#835cf3', '#8d38e4', '#f35c5c', '#b1f35c'];
-  var textcolor = textcolors[Math.floor(Math.random() * textcolors.length)];
+  const changeColor = () => {
+  const textcolors = ['#5cd1f3', '#835cf3', '#8d38e4', '#f35c5c', '#b1f35c'];
+  let textcolor = textcolors[Math.floor(Math.random() * textcolors.length)];
   $('#tip').css({ color: `${textcolor}` });
   }
 
-  function animatecolor() {
+  const animatecolor = () => {
     setInterval(changeColor, 3000);
   }
   $(document).ready(animatecolor);
+  
+  confetti.start();
+  
+  const handleIntersectTitle = (entries, observer) =>
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        confetti.stop();
+        console.log("observing" , entry.target);
+        entry.target.classList.add('fadeInLeft');
+        observer.unobserve(entry.target);
+        
+      } else {
+        console.log("not observing");
+      }
+    });
+  
+    const handleIntersectContent = (entries, observer) =>
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        confetti.stop();
+        console.log("observing" , entry.target);
+        entry.target.classList.add('fadeInRight');
+        observer.unobserve(entry.target);
+        
+      } else {
+        console.log("not observing");
+      }
+    });
+  
+  
+  observeTitle = new IntersectionObserver(handleIntersectTitle, options);
+  
+  observeContent = new IntersectionObserver(handleIntersectContent, options);
+  
+  title.forEach(tit => {
+    observeTitle.observe(tit);
+  });
+  
+  content.forEach(con => {
+    observeContent.observe(con);
+  });
+
 });
