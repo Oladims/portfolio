@@ -1,0 +1,18 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "serve": "http-server -p 1336 build -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oladims/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
