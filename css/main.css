@@ -1,5 +1,6 @@
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-Light.eot);
   src: url(../fonts/apercu/Apercu-Light.eot?#iefix) format("embedded-opentype"),
     url(../fonts/apercu/Apercu-Light.woff2) format("woff2"),
@@ -11,6 +12,7 @@
 }
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-LightItalic.eot);
   src: url(../fonts/apercu/Apercu-LightItalic.eot?#iefix)
       format("embedded-opentype"),
@@ -23,6 +25,7 @@
 }
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-Regular.eot);
   src: url(../fonts/apercu/Apercu-Regular.eot?#iefix)
       format("embedded-opentype"),
@@ -35,6 +38,7 @@
 }
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-Italic.eot);
   src: url(../fonts/apercu/Apercu-Italic.eot?#iefix) format("embedded-opentype"),
     url(../fonts/apercu/Apercu-Italic.woff2) format("woff2"),
@@ -46,6 +50,7 @@
 }
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-Medium.eot);
   src: url(../fonts/apercu/Apercu-Medium.eot?#iefix) format("embedded-opentype"),
     url(../fonts/apercu/Apercu-Medium.woff2) format("woff2"),
@@ -57,6 +62,7 @@
 }
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-MediumItalic.eot);
   src: url(../fonts/apercu/Apercu-MediumItalic.eot?#iefix)
       format("embedded-opentype"),
@@ -70,6 +76,7 @@
 }
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-Bold.eot);
   src: url(../fonts/apercu/Apercu-Bold.eot?#iefix) format("embedded-opentype"),
     url(../fonts/apercu/Apercu-Bold.woff2) format("woff2"),
@@ -81,6 +88,7 @@
 }
 @font-face {
   font-family: Apercu;
+  font-display: auto;
   src: url(../fonts/apercu/Apercu-BoldItalic.eot);
   src: url(../fonts/apercu/Apercu-BoldItalic.eot?#iefix)
       format("embedded-opentype"),
@@ -116,6 +124,7 @@ html {
   /* background: rgba(0,0,0,0.5) */
   color: #444452;
   font-family: Apercu, "Source Sans Pro", system, system-ui, -apple-system,
+  font-display: auto;
     BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   width: 100%;
@@ -444,6 +453,7 @@ strong {
 }
 .small {
   font-family: Inconsolata, monospace;
+  font-display: auto;
   font-size: 0.85rem;
   display: inline-block;
   margin-top: 15px;
@@ -855,6 +865,7 @@ strong {
 .experience .job__time {
   font-size: 0.9rem;
   font-family: Inconsolata, monospace;
+  font-display: auto;
 }
 @media screen and (max-width: 480px) {
   .experience .job__time {
@@ -1042,6 +1053,7 @@ strong {
   display: inline-block;
   margin: 3px 3px 3px 0;
   font-family: Inconsolata, monospace;
+  font-display: auto;
   font-size: 0.75rem;
   font-weight: 700;
   padding: 2px 7px;
