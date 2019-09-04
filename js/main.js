@@ -8,7 +8,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-
 $(function() {
   const d = new Date();
   const hours = d.getHours();
