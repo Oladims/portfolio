@@ -32,7 +32,7 @@ $(function() {
 
   const introHeight = document.querySelector(".intro").offsetHeight;
   const topButton = document.getElementById("top-button");
-  const topButtonImg = document.querySelector(".top-btn-img");
+  const images = document.querySelectorAll(".images");
   const $topButton = $("#top-button");
 
   window.addEventListener(
@@ -120,8 +120,9 @@ $(function() {
 
   observeContent = new IntersectionObserver(handleIntersectContent, options);
 
-  observeImg.observe(topButtonImg);
-
+  images.forEach(image => {
+  observeImg.observe(image);
+  });
   title.forEach(tit => {
     observeTitle.observe(tit);
   });
