@@ -11,9 +11,25 @@
 
   gtag('config', 'UA-145716019-1');
 </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+          console.log("[PWA Builder] active service worker found, no need to register");
+        } else {
+          navigator.serviceWorker
+            .register("pwabuilder-sw.min.js", {
+              scope: "./"
+            })
+            .then(function (reg) {
+              console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+      }
+            
+          </script>
 
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#2196f3"/>
+<meta name="theme-color" content="#171c28"/>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="application-name" content="Ibro">
@@ -21,8 +37,8 @@
 <meta name="msapplication-starturl" content="/">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
-<link rel="icon" href="./img/emojis/sharingan.png">
-<link rel="apple-touch-icon" href="./img/emojis/sharingan.png">
+<link rel="icon" href="./img/icons/icon-192x192.png">
+<link rel="apple-touch-icon" href="./img/icons/icon-192x192.png">
 
 
     <meta charset="UTF-8" />
@@ -39,28 +55,16 @@
       hreflang="en-us"
     />
     <meta
-      property="og:title"
+      property="title"
       content="Ibrahim Olufowora | Front End Software Engineer"
     />
-    <meta
-      property="og:description"
-      content="Design-minded front-end engineer focused on building responsive and accessible interfaces & experiences on the web"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https:ibro.ml/" />
-    <meta property="og:site_name" content="Ibrahim Olufowora" />
-    <meta property="og:image" content="./img/og.png" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="800" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:locale" content="en_US" />
     <meta
       name="description"
       content="Design-minded front-end engineer focused on building responsive and accessible interfaces & experiences on the web"
     />
     <meta
       name="keywords"
-      content="design, development, web, Front-end, ibrodev, holla_dimeji, Ibrahim, Olufowora, javascript"
+      content="design, development, web, Front-end, ibrodev, holla_dimeji, oladims, Ibrahim Olufowora, javascript"
     />
     <meta
       name="google-site-verification"
@@ -87,10 +91,6 @@
       name="twitter:description"
       content="Design-minded front-end engineer focused on building responsive and accessible interfaces & experiences on the web"
     />
-    <meta
-      name="twitter:image:src"
-      content="./img/og.png"
-      />
 
       <link
       href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
@@ -150,10 +150,9 @@
             class="highlight-link"
             >olufoworaibrahim@gmail.com</a
             >
-          </span>
-          <span>
             <a rel="noreferrer"
             href="about.html"
+            target=""
             class="highlight-link"
             >About</a
             >
@@ -475,13 +474,14 @@
         <img class="top-btn-img images" src="" data-src="./img/emojis/thanos.png" alt="top button" />
       </button>
     </div>
+
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script src="./js/confetti.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./js/draw.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/confetti.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/draw.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/main.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
   </html>
   

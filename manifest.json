@@ -1,8 +1,8 @@
 {
   "name": "Ibrodev",
   "short_name": "Ibro",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#171c28",
+  "background_color": "#171c28",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",
@@ -47,6 +47,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "splash_pages": null
+  ]
 }
