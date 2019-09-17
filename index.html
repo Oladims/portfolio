@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -14,6 +14,8 @@
     <script>
       if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
+          
+          console.log("[PWA Activated]");
           console.log("[PWA Builder] active service worker found, no need to register");
         } else {
           navigator.serviceWorker
@@ -21,14 +23,15 @@
               scope: "./"
             })
             .then(function (reg) {
+              console.log("[PWA registered]");
               console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
             });
         }
       }
             
           </script>
-
-<link rel="manifest" href="manifest.json">
+<link rel='manifest' href='/manifest.webmanifest'>
+<!-- <link rel="manifest" href="manifest.json"> -->
 <meta name="theme-color" content="#171c28"/>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">

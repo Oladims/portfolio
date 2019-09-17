@@ -38,7 +38,7 @@ self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
 
   event.respondWith(
-    caches.match(event.request).then(
+    fromCache(event.request).then(
       function (response) {
         // The response was found in the cache so we responde with it and update the entry
 
