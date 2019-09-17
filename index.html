@@ -11,27 +11,9 @@
 
   gtag('config', 'UA-145716019-1');
 </script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        if (navigator.serviceWorker.controller) {
-          
-          console.log("[PWA Activated]");
-          console.log("[PWA Builder] active service worker found, no need to register");
-        } else {
-          navigator.serviceWorker
-            .register("pwabuilder-sw.js", {
-              scope: "./"
-            })
-            .then(function (reg) {
-              console.log("[PWA registered]");
-              console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-            });
-        }
-      }
-            
-          </script>
-<link rel='manifest' href='/manifest.webmanifest'>
-<!-- <link rel="manifest" href="manifest.json"> -->
+
+<!-- <link rel='manifest' href='/manifest.webmanifest'> -->
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#171c28"/>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -104,7 +86,25 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"
     defer
   ></script>
-  
+  <script>
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        
+        console.log("[PWA Activated]");
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA registered]");
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+          
+        </script>
   </head>
   <body>
     <div id="site">

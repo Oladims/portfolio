@@ -1,6 +1,6 @@
 // This is the service worker with the Cache-first network
 
-const CACHE = "pwabuilder-precacheLatest";
+const CACHE = "pwabuilderCache";
 const precacheFiles = [
   "index.html",
   "about.html",
@@ -8,7 +8,6 @@ const precacheFiles = [
   "/js/main.js",
   "/js/draw.js",
   "/js/confetti.js",
-  "/fonts",
   "/img",
   /* Add an array of files to precache for your app */
 ];
