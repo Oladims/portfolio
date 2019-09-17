@@ -8,7 +8,21 @@ const precacheFiles = [
   "/js/main.js",
   "/js/draw.js",
   "/js/confetti.js",
-  "/img",
+  "/img/arrow.png",
+  "/img/emojis/rockon.png",
+  "/img/emojis/sharingan.png",
+  "/img/emojis/wave.png",
+  "/img/emojis/thanos.png",
+  "/img/social/codepen.svg",
+  "/img/social/twitter.svg",
+  "/img/social/github.svg",
+  "/img/social/instagram.svg",
+  "/img/social/linkedin.svg",
+  "/img/switch/moon.svg",
+  "/img/switch/sun.svg",
+  "/img/featured/engage/engage.png",
+  "/img/featured/questioner/questioner.png",
+  "/img/featured/bizkit/bizkit.png",
   /* Add an array of files to precache for your app */
 ];
 
