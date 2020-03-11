@@ -1,37 +1,37 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145716019-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145716019-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-145716019-1');
-</script>
+      gtag("config", "UA-145716019-1");
+    </script>
 
-<!-- <link rel='manifest' href='/manifest.webmanifest'> -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#171c28"/>
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="application-name" content="Ibro">
-<meta name="apple-mobile-web-app-title" content="Ibro">
-<meta name="msapplication-starturl" content="/">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <!-- <link rel='manifest' href='/manifest.webmanifest'> -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#171c28" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Ibro" />
+    <meta name="apple-mobile-web-app-title" content="Ibro" />
+    <meta name="msapplication-starturl" content="/" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
-<link rel="icon" href="./images/icons/icon-192x192.png">
-<link rel="apple-touch-icon" href="./images/icons/icon-192x192.png">
-
+    <link rel="icon" href="./images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="./images/icons/icon-192x192.png" />
 
     <meta charset="UTF-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ibrahim Olufowora | Front End Software Engineer</title>
     <link
       rel="icon"
@@ -77,34 +77,37 @@
       content="Design-minded front-end engineer focused on building responsive and accessible interfaces & experiences on the web"
     />
 
-      <link
+    <link
       href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
       rel="stylesheet"
-      />
-      <link rel="stylesheet" href="./css/main.css" hreflang="en-us" />
+    />
+    <link rel="stylesheet" href="./css/main.css" hreflang="en-us" />
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"
-    defer
-  ></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      if (navigator.serviceWorker.controller) {
-        
-        console.log("[PWA Activated]");
-        console.log("[PWA Builder] active service worker found, no need to register");
-      } else {
-        navigator.serviceWorker
-          .register("pwabuilder-sw.js", {
-            scope: "/"
-          })
-          .then(function (reg) {
-            console.log("[PWA registered]");
-            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-          });
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"
+      defer
+    ></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+          console.log("[PWA Activated]");
+          console.log(
+            "[PWA Builder] active service worker found, no need to register"
+          );
+        } else {
+          navigator.serviceWorker
+            .register("pwabuilder-sw.js", {
+              scope: "/"
+            })
+            .then(function(reg) {
+              console.log("[PWA registered]");
+              console.log(
+                "[PWA Builder] Service worker has been registered for scope: " +
+                  reg.scope
+              );
+            });
+        }
       }
-    }
-          
-        </script>
+    </script>
   </head>
   <body>
     <div id="site">
@@ -117,87 +120,118 @@
         <div class="moon"></div>
       </div>
       <header class="intro">
-
         <div id="intro__name" class="d-none intro__tagline">
-            <div class="alias animated slow fadeInDown">
-                <span style="color:#e8c0ff;" class="transparent animateupdown">D</span>
-                <span style="color:#3db161;" class="transparent animateupdown">E</span>
-                <span style="color:#f0532c;" class="transparent animateupdown">V</span>
-            </div>
-            <div class="alias animated slow fadeInUp">
-                <span style="color:#fd3;" class=" transparent animateupdown">I</span>
-                <span style="color:#FF00FF;" class=" transparent animateupdown">B</span>
-                <span style="color:#000080;" class=" transparent animateupdown">R</span>
-                <span style="color:#008080;" class=" transparent animateupdown">A</span>
-                <span style="color:#00FFFF;" class=" transparent animateupdown">H</span>
-                <span style="color:#808000;" class=" transparent animateupdown">I</span>
-                <span style="color:#bd9986;" class=" transparent animateupdown">M</span>
-            </div>
-        </div>
-      
-        <div class="" id="intro__info">
-            <h1 class="intro__hello">
-          Hello! <span class="emoji wave-hand animated slow"></span>
-        </h1>
-        <h2 class="intro__tagline">
-          I'm <span class="name">Ibrahim Olufowora</span>, a design-minded
-          front-end engineer focused on building responsive and accessible
-          interfaces &amp; experiences on the web.
-        </h2>
-        <h3 class="intro__contact">
-          <span>Get in touch </span> <span class="emoji pointer"></span>
-          <span>
-            <a rel="noreferrer noopener"
-            href="mailto:olufoworaibrahim@gmail.com"
-            target="_blank"
-            class="highlight-link"
-            >olufoworaibrahim@gmail.com</a
+          <div class="alias animated slow fadeInDown">
+            <span style="color:#e8c0ff;" class="transparent animateupdown"
+              >D</span
             >
-            <!-- <a rel="noreferrer noopener"
+            <span style="color:#3db161;" class="transparent animateupdown"
+              >E</span
+            >
+            <span style="color:#f0532c;" class="transparent animateupdown"
+              >V</span
+            >
+          </div>
+          <div class="alias animated slow fadeInUp">
+            <span style="color:#fd3;" class=" transparent animateupdown"
+              >I</span
+            >
+            <span style="color:#FF00FF;" class=" transparent animateupdown"
+              >B</span
+            >
+            <span style="color:#000080;" class=" transparent animateupdown"
+              >R</span
+            >
+            <span style="color:#008080;" class=" transparent animateupdown"
+              >A</span
+            >
+            <span style="color:#00FFFF;" class=" transparent animateupdown"
+              >H</span
+            >
+            <span style="color:#808000;" class=" transparent animateupdown"
+              >I</span
+            >
+            <span style="color:#bd9986;" class=" transparent animateupdown"
+              >M</span
+            >
+          </div>
+        </div>
+
+        <div class="" id="intro__info">
+          <h1 class="intro__hello">
+            Hello! <span class="emoji wave-hand animated slow"></span>
+          </h1>
+          <h2 class="intro__tagline">
+            I'm <span class="name">Ibrahim Olufowora</span>, a design-minded
+            front-end engineer focused on building responsive and accessible
+            interfaces &amp; experiences on the web.
+          </h2>
+          <h3 class="intro__contact">
+            <span>Get in touch </span> <span class="emoji pointer"></span>
+            <span>
+              <a
+                rel="noreferrer noopener"
+                href="mailto:olufoworaibrahim@gmail.com"
+                target="_blank"
+                class="highlight-link"
+                >olufoworaibrahim@gmail.com</a
+              >
+              <!-- <a rel="noreferrer noopener"
             href="about.html"
             target=""
             class="highlight-link"
             >About</a
             > -->
-          </span>
-        </h3>
-        <em id="tip">(Click anywhere to interact)</span> </em>
+            </span>
+          </h3>
+          <em id="tip">(Click anywhere to interact) </em>
         </div>
-
       </header>
       <section class="section background">
         <div class="animated slow  section__title">Background</div>
         <div class="section__content animated slow ">
           <p>
             I'm currently an Engineer at
-            <a rel="noreferrer noopener"
-            class="onTop underline-link"
-            href="https://www.sidmach.com/"
+            <a
+              rel="noreferrer noopener"
+              class="onTop underline-link"
+              href="https://www.sidmach.com/"
               target="_blank"
               >Sidmach Technologies</a
             >
-            building web solutions together with awesome people for amazing clients. I
-            graduated from the
-            <a rel="noreferrer noopener"
+            building web solutions together with awesome people for amazing
+            clients. I graduated from the
+            <a
+              rel="noreferrer noopener"
               class="onTop underline-link"
               href="https://www.microsoft.com/africa/4afrika/appfactory.aspx"
               target="_blank"
-              >Microsoft AppFactory </a
-            >
+              >Microsoft AppFactory
+            </a>
             programme after completing unique top notch projects.
           </p>
           <p>
-              As a software engineer, I enjoy bridging the gap between engineering and design - combining state-of-the-art  technical knowledge with a keen eye for design to create a most beautiful product and services. My goal is to always build applications that are scalable and efficient under the hood while providing engaging user experience.
+            As a software engineer, I enjoy bridging the gap between engineering
+            and design - combining state-of-the-art technical knowledge with a
+            keen eye for design to create a most beautiful product and services.
+            My goal is to always build applications that are scalable and
+            efficient under the hood while providing engaging user experience.
           </p>
           <p>
-            <strong>When I'm not coding</strong> you can find me playing video games (FIFA, PES), watching Anime, or hanging out with friends/family.
+            <strong>When I'm not coding</strong> you can find me playing video
+            games (FIFA, PES), watching Anime, or hanging out with
+            friends/family.
           </p>
         </div>
       </section>
       <section class="section skills">
         <div class=" animated slow section__title">Skills</div>
         <div class="section__content animated slow ">
-          <p>I am proficient in quite some skills and on my way to becoming a professional. Here are a few of the technologies I have experience with:</p>
+          <p>
+            I am proficient in quite some skills and on my way to becoming a
+            professional. Here are a few of the technologies I have experience
+            with:
+          </p>
           <div class="skillz">
             <div class="skillz__category">
               <div class="skillz__category__label">Languages</div>
@@ -248,8 +282,11 @@
             <div class="job">
               <div class="time-place">
                 <div class="job__company onTop">
-                  <a rel="noreferrer noopener" href="https://www.sidmach.com/" target="_blank"
-                  >Sidmach</a
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://www.sidmach.com/"
+                    target="_blank"
+                    >Sidmach</a
                   >
                 </div>
                 <div class="job__time">February 2019 - Present</div>
@@ -259,8 +296,11 @@
             <div class="job">
               <div class="time-place">
                 <div class="job__company onTop">
-                  <a rel="noreferrer noopener" href="https://www.andela.com/" target="_blank"
-                  >Andela(Bootcamp)</a
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://www.andela.com/"
+                    target="_blank"
+                    >Andela(Bootcamp)</a
                   >
                 </div>
                 <div class="job__time">December - January 2019</div>
@@ -270,8 +310,11 @@
             <div class="job">
               <div class="time-place">
                 <div class="job__company onTop">
-                  <a rel="noreferrer noopener" href="https://www.sidmach.com/" target="_blank"
-                  >Sidmach</a
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://www.sidmach.com/"
+                    target="_blank"
+                    >Sidmach</a
                   >
                 </div>
                 <div class="job__time">June - October 2018</div>
@@ -281,8 +324,11 @@
             <div class="job">
               <div class="time-place">
                 <div class="job__company onTop">
-                  <a rel="noreferrer noopener" href="https://www.microsoft.com/africa/4afrika/appfactory.aspx" target="_blank"
-                  >Microsoft App-Factory</a
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://www.microsoft.com/africa/4afrika/appfactory.aspx"
+                    target="_blank"
+                    >Microsoft App-Factory</a
                   >
                 </div>
                 <div class="job__time">January - June 2018</div>
@@ -290,12 +336,13 @@
               <div class="job__position">Software Developer Intern</div>
             </div>
           </div>
-          <a rel="noreferrer noopener"
-          href="https://oladims.github.io/portfolio/resume.pdf"
+          <a
+            rel="noreferrer noopener"
+            href="https://oladims.github.io/portfolio/resume.pdf"
             target="_blank"
             class="arrow-link onTop"
             >View My Resume</a
-            >
+          >
         </div>
       </section>
       <section class="section featured-projects">
@@ -303,7 +350,11 @@
         <div class="section__content animated slow ">
           <div class="project blistabloc">
             <figure class="project__pic">
-              <a rel="noreferrer noopener" href="https://uxtheclass.com" target="_blank">
+              <a
+                rel="noreferrer noopener"
+                href="https://uxtheclass.com"
+                target="_blank"
+              >
                 <!-- <img class="images"
                 src=""
                 alt="Engage Website Image"
@@ -312,77 +363,108 @@
             </figure>
             <figcaption class="project__caption">
               <div class="project__name">
-                <a rel="noreferrer noopener" href="https://uxtheclass.com" target="_blank">UXTHECLASS</a>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://uxtheclass.com"
+                  target="_blank"
+                  >UXTHECLASS</a
+                >
               </div>
               <p>
-                  A platform for the next generation digital experience designers in creating meaningful and immersive experiences on the web.
-
-
+                A platform for the next generation digital experience designers
+                in creating meaningful and immersive experiences on the web.
               </p>
             </figcaption>
           </div>
-
-
 
           <div class="project blistabloc">
             <figure class="project__pic">
-              <a rel="noreferrer noopener" href="http://market-engage.azurewebsites.net" target="_blank">
-                <img class="images"
-                src=""
-                alt="Engage Website Image"
-                data-src="/img/featured/engage/engage.png "alt="" />
-              </a>
-            </figure>
-            <figcaption class="project__caption">
-              <div class="project__name">
-                <a rel="noreferrer noopener" href="http://market-engage.azurewebsites.net/" target="_blank">Engage</a>
-              </div>
-              <p>
-                  A platform that connects corp members to buy and sell goods from one another.
-              </p>
-            </figcaption>
-          </div>
-          <div class="project interventions">
-            <figure class="project__pic">
-              <a rel="noreferrer noopener" href="https://oladims-questioner.herokuapp.com/" target="_blank">
+              <a
+                rel="noreferrer noopener"
+                href="http://market-engage.azurewebsites.net"
+                target="_blank"
+              >
                 <img
-                class="images"
-                src=""
-                data-src="/img/featured/questioner/questioner.png"
-                alt="Questioner Website Image"
+                  class="images"
+                  src=""
+                  alt="Engage Website Image"
+                  data-src="/img/featured/engage/engage.png "
+                  alt=""
                 />
               </a>
             </figure>
             <figcaption class="project__caption">
               <div class="project__name">
-                <a rel="noreferrer noopener" href="https://oladims-questioner.herokuapp.com" target="_blank"
+                <a
+                  rel="noreferrer noopener"
+                  href="http://market-engage.azurewebsites.net/"
+                  target="_blank"
+                  >Engage</a
+                >
+              </div>
+              <p>
+                A platform that connects corp members to buy and sell goods from
+                one another.
+              </p>
+            </figcaption>
+          </div>
+          <div class="project interventions">
+            <figure class="project__pic">
+              <a
+                rel="noreferrer noopener"
+                href="https://oladims-questioner.herokuapp.com/"
+                target="_blank"
+              >
+                <img
+                  class="images"
+                  src=""
+                  data-src="/img/featured/questioner/questioner.png"
+                  alt="Questioner Website Image"
+                />
+              </a>
+            </figure>
+            <figcaption class="project__caption">
+              <div class="project__name">
+                <a
+                  rel="noreferrer noopener"
+                  href="https://oladims-questioner.herokuapp.com"
+                  target="_blank"
                   >Questioner</a
-                  >
+                >
               </div>
               <p>
-                  An application that helps meetup organizers crowd-source question for a meetup.
+                An application that helps meetup organizers crowd-source
+                question for a meetup.
               </p>
             </figcaption>
           </div>
           <div class="project interventions">
             <figure class="project__pic">
-              <a rel="noreferrer noopener" href="https://bizkit.com.ng/" target="_blank">
+              <a
+                rel="noreferrer noopener"
+                href="https://bizkit.com.ng/"
+                target="_blank"
+              >
                 <img
-                class="images"
-                src=""
-                data-src="/img/featured/bizkit/bizkit.png"
-                alt="BizKit Website Image"
+                  class="images"
+                  src=""
+                  data-src="/img/featured/bizkit/bizkit.png"
+                  alt="BizKit Website Image"
                 />
               </a>
             </figure>
             <figcaption class="project__caption">
               <div class="project__name">
-                <a rel="noreferrer noopener" href="https://bizkit.com.ng/" target="_blank"
+                <a
+                  rel="noreferrer noopener"
+                  href="https://bizkit.com.ng/"
+                  target="_blank"
                   >BizKit</a
-                  >
+                >
               </div>
               <p>
-                  A platform that offers a complete business solution for every SME Manager.
+                A platform that offers a complete business solution for every
+                SME Manager.
               </p>
             </figcaption>
           </div>
@@ -393,15 +475,36 @@
         <div class="section__content animated slow ">
           <div class="project">
             <div class="project__name">
-              <a rel="noreferrer noopener"
-              href="https://test-server.netlify.com"
+              <a
+                rel="noreferrer noopener"
+                href="https://blog.ibro.ml/"
+                target="_blank"
+                class="arrow-link"
+                >IbroBlog</a
+              >
+            </div>
+            <p>
+              My personal blog built with HUGO
+            </p>
+            <div class="project__used">
+              <span class="project__used__item">HUGO</span>
+              <span class="project__used__item">CMS</span>
+              <span class="project__used__item">JAMstack</span>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__name">
+              <a
+                rel="noreferrer noopener"
+                href="https://test-server.netlify.com"
                 target="_blank"
                 class="arrow-link"
                 >Eduleads</a
               >
             </div>
             <p>
-              A platform that offers a complete business solution for every SME Manager...
+              A platform that offers a complete business solution for every SME
+              Manager...
             </p>
             <div class="project__used">
               <span class="project__used__item">Vue js</span>
@@ -413,15 +516,17 @@
           </div>
           <div class="project">
             <div class="project__name">
-              <a rel="noreferrer noopener"
-              href="https://bizkit.com.ng"
+              <a
+                rel="noreferrer noopener"
+                href="https://bizkit.com.ng"
                 target="_blank"
                 class="arrow-link"
                 >BizKit</a
               >
             </div>
             <p>
-              A platform that offers a complete business solution for every SME Manager...
+              A platform that offers a complete business solution for every SME
+              Manager...
             </p>
             <div class="project__used">
               <span class="project__used__item">C#</span>
@@ -433,15 +538,17 @@
           </div>
           <div class="project">
             <div class="project__name">
-              <a rel="noreferrer noopener"
-              href="https://oladims-questioner.herokuapp.com/"
+              <a
+                rel="noreferrer noopener"
+                href="https://oladims-questioner.herokuapp.com/"
                 target="_blank"
                 class="arrow-link"
                 >Questioner</a
               >
             </div>
             <p>
-              An application that helps meetup organizers crowd-source question for a meetup.
+              An application that helps meetup organizers crowd-source question
+              for a meetup.
             </p>
             <div class="project__used">
               <span class="project__used__item">Javascript</span>
@@ -457,82 +564,106 @@
         <div class="footer__copyright">
           <div class="top"><span>Developed by Ibrahim</span></div>
           <div class="bottom">
-            <span>Inspired by 
-            <a rel="noreferrer noopener"
-              href="https://brittanychiang.com/"
-              target="_blank"
-              class=" onTop underline-link"
-              >Brittany</a
-            > &amp 
-            <a rel="noreferrer noopener"
-              href="https://github.com/aspittel/aspittel.github.io/"
-              target="_blank"
-              class=" onTop underline-link"
-              >Ali</a
-            ></span>
-            <img class="emoji" src="./img/emojis/rockon.png" alt="emoji">
+            <span
+              >Inspired by
+              <a
+                rel="noreferrer noopener"
+                href="https://brittanychiang.com/"
+                target="_blank"
+                class=" onTop underline-link"
+                >Brittany</a
+              >
+              &amp
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/aspittel/aspittel.github.io/"
+                target="_blank"
+                class=" onTop underline-link"
+                >Ali</a
+              ></span
+            >
+            <img class="emoji" src="./img/emojis/rockon.png" alt="emoji" />
             <!-- <span>2018</span> -->
           </div>
         </div>
         <div class="footer__links">
-          <a rel="noreferrer noopener"
-          href="mailto:olufoworaibrahim@gmail.com"
+          <a
+            rel="noreferrer noopener"
+            href="mailto:olufoworaibrahim@gmail.com"
             target="_blank"
             title="email"
           >
-          <span class="text">email</span>
+            <span class="text">email</span>
             <img src="./img/social/email.svg" alt="email" />
           </a>
-          <a rel="noreferrer noopener"
+          <a
+            rel="noreferrer noopener"
             href="https://twitter.com/holla_dimeji"
             target="_blank"
             title="twitter"
-            >
+          >
             <span class="text">twitter</span>
             <img src="./img/social/twitter.svg" alt="twitter" />
           </a>
-          <a rel="noreferrer noopener"
-          href="https://instagram.com/holla_dimeji"
-          target="_blank"
-          title="instagram"
+          <a
+            rel="noreferrer noopener"
+            href="https://instagram.com/holla_dimeji"
+            target="_blank"
+            title="instagram"
           >
-          <span class="text">instagram</span>
-          <img src="./img/social/instagram.svg" alt="instagram" />
-        </a>
-        <a rel="noreferrer noopener"
-        href="https://codepen.io/holla_dimeji"
-        target="_blank"
+            <span class="text">instagram</span>
+            <img src="./img/social/instagram.svg" alt="instagram" />
+          </a>
+          <a
+            rel="noreferrer noopener"
+            href="https://codepen.io/holla_dimeji"
+            target="_blank"
             title="codepen"
-            >
+          >
             <span class="text">codepen</span>
             <img src="./img/social/codepen.svg" alt="codepen" />
           </a>
-          <a rel="noreferrer noopener" href="https://github.com/oladims" target="_blank" title="github">
+          <a
+            rel="noreferrer noopener"
+            href="https://github.com/oladims"
+            target="_blank"
+            title="github"
+          >
             <span class="text">github</span>
             <img src="./img/social/github.svg" alt="github" />
           </a>
-          <a rel="noreferrer noopener"
+          <a
+            rel="noreferrer noopener"
             href="https://www.linkedin.com/in/olufowora-ibrahim"
             target="_blank"
             title="linkedin"
           >
-          <span class="text">linkedin</span>
-          <img src="./img/social/linkedin.svg" alt="linkedin" />
-        </a>
+            <span class="text">linkedin</span>
+            <img src="./img/social/linkedin.svg" alt="linkedin" />
+          </a>
         </div>
       </footer>
       <button id="top-button">
-        <img class="top-btn-img images" src="" data-src="./img/emojis/thanos.png" alt="top button" />
+        <img
+          class="top-btn-img images"
+          src=""
+          data-src="./img/emojis/thanos.png"
+          alt="top button"
+        />
       </button>
     </div>
 
     <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <script src="./js/confetti.js" type="text/javascript" charset="utf-8"></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./js/confetti.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <script src="./js/draw.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
   </body>
-  </html>
-  
+</html>
